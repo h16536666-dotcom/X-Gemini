@@ -1,0 +1,86 @@
+:root {
+    --gemini-cyan: #00eaff;
+    --bg-dark: #0a0a14;
+    --glow: 0 0 15px #00eaff, 0 0 30px #00eaff;
+}
+
+body {
+    background-color: var(--bg-dark);
+    color: var(--gemini-cyan);
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+.jarvis-container {
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+}
+
+/* Көк түсті реактор шеңбері */
+.arc-reactor {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    border: 3px double var(--gemini-cyan);
+    margin: 0 auto 30px;
+    position: relative;
+    box-shadow: var(--glow), inset 0 0 20px rgba(0, 234, 255, 0.5);
+    background: radial-gradient(circle, #001f26 0%, #05050a 100%);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Ортасындағы жанатын ядро */
+.core {
+    width: 50px;
+    height: 50px;
+    background: #ffffff;
+    border-radius: 50%;
+    box-shadow: 0 0 30px #ffffff, 0 0 20px var(--gemini-cyan);
+}
+
+.status-text {
+    font-size: 1.4rem;
+    letter-spacing: 3px;
+    text-shadow: 0 0 10px var(--gemini-cyan);
+    margin-bottom: 25px;
+}
+
+/* Енгізу жолы */
+.input-box {
+    display: flex;
+    border: 1px solid var(--gemini-cyan);
+    padding: 5px;
+    background: rgba(0, 234, 255, 0.05);
+    box-shadow: inset 0 0 10px rgba(0, 234, 255, 0.2);
+    border-radius: 5px;
+}
+
+#cmd-input {
+    background: none;
+    border: none;
+    color: #fff;
+    padding: 12px;
+    width: 80%;
+    outline: none;
+    font-size: 1rem;
+}
+
+#send-btn {
+    background: var(--gemini-cyan);
+    border: none;
+    color: #000;
+    font-weight: bold;
+    width: 20%;
+    cursor: pointer;
+    border-radius: 3px;
+    box-shadow: 0 0 10px var(--gemini-cyan);
+}
